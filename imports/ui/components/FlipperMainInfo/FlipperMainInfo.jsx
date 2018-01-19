@@ -19,7 +19,7 @@ export default class FlipperMainInfo extends Component {
     }
     render() {
         const ehtbtcpercent = Math.round(this.props.latestCryptoVal.ethbtc * 100);
-        document.title = `${ehtbtcpercent}% Flipper | Watchening Ethereum Flippening Happening`;
+        document.title = `${roundPc(this.props.latestCryptoVal.ethbtc)}% Flipper | Watchening Ethereum Flippening Happening`;
 
         return (
             <div id="main-content" className="jumbotron col-12">
