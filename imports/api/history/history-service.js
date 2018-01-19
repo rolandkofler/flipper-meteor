@@ -116,10 +116,11 @@ async function checkMaximumRate(ethbtc) {
     const maximumRate = maximumRateItem && maximumRateItem.maximumRate || 0;
     console.log('Max rate', maximumRate, ethbtc, maximumRateItem);
     if(maximumRate < ethbtc) {
-        await MaximumRateStats.remove({});
-        await MaximumRateStats.insert({
+        const newMax = {
             'maximumRateTimestamp' : Date.now(),
             'maximumRate': ethbtc
-        })
+        }
+        await MaximumRateStats.remove({});
+        await MaximumRateStats.insert(newMax);
     }
 }
