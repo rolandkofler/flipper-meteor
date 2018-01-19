@@ -1,0 +1,13 @@
+html, body { height:100%; }
+a {
+    color: #57c8fb;
+}
+a:focus, a:hover {
+    color: #23587c;
+}
+
+// Import component styles to one place so it ends up in one style tag in header.
+// REMEMBER ABOUT TO WRAP COMPONENT IN UNIQUE ID SO GLOBAL STYLES WON'T OVERWRITE!!!
+@import './FlipperMainInfo/FlipperMainInfo.scss';
+@import './FlippingDolphin/FlippingDolphin.scss';
+@import './BreakEvenMetrics/BreakEvenMetrics.scss';

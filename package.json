@@ -1,0 +1,24 @@
+{
+  "name": "flipper",
+  "version": "1.0.0",
+  "description": "fetches data from coinmarketcap.com and caches it in a database",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "meteor-node-stubs": "^0.3.2",
+    "moment": "^2.20.1",
+    "normalize.css": "^7.0.0",
+    "proptypes": "^1.1.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "keywords": [
+    "ethereum",
+    "theflippening",
+    "bitcoin",
+    "coinmarketcap"
+  ]
+}
